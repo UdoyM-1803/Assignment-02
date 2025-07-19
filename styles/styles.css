@@ -104,7 +104,7 @@ nav ul {
 }
 
 .btn-primary {
-    /* max-width: 200px; */
+    max-width: 200px;
     padding: 16px 40px;
     background-color: red;
     color: white;
@@ -172,7 +172,7 @@ main section {
     text-align: center;
 }
 
-.habit-content {
+.normal-font {
     font-size: 0.875rem;
     color: rgba(255, 255, 255, 0.5);
 }
@@ -197,11 +197,35 @@ main section {
     font-weight: 600;
 }
 
-.habits p {
-    font-size: 0.875rem;
-    color: rgba(255, 255, 255, 0.5);
+
+
+/* Second styles related ........................... */
+.second-sec {
+    padding: 30px;
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
 }
 
+.run-section {
+    padding: 20px;
+    max-width: 50%;
+    text-align: left;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.run-section h1 {
+    margin: 10px auto 10px 0px;
+}
+
+.run-image {
+    max-width: 350px;
+    max-height: 350px;
+    border-radius: 10px;
+}
 
 
 
@@ -209,7 +233,12 @@ main section {
 /* Media queries related............................. */
 
 @media screen and (max-width: 576px) {
-    .header-content, .navbar, .nav-item, .habit-item {
+
+    .header-content,
+    .navbar,
+    .nav-item,
+    .habit-item,
+    .second-sec {
         flex-direction: column;
         align-items: start;
     }
@@ -239,5 +268,13 @@ main section {
         margin-left: 50px;
     }
 
+    .run-section {
+        padding: 0px;
+        max-width: 100%;
+    }
 
+    .second-sec {
+        gap: 10px;
+        padding: auto 20px;
+    }
 }
