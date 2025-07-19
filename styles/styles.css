@@ -17,8 +17,7 @@ header {
 }
 
 .header-page,
-main,
-footer {
+main {
     max-width: 80%;
     margin: 0 auto;
 }
@@ -352,6 +351,138 @@ form input {
 }
 
 
+
+/* Fifth section related style..................... */
+.fifth-sec {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.team-content {
+    max-width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.team-section {
+    border-radius: 18px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+
+.team-image-1 {
+    background-image: url(../images/trainer1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 18px;
+    /* height: 100%;
+    width: 100%; */
+}
+.team-image-2 {
+    background-image: url(../images/trainer2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 18px;
+}
+.team-image-3 {
+    background-image: url(../images/trainer3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 18px;
+}
+.team-image-4 {
+    background-image: url(../images/trainer4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 18px;
+    background-position: center;
+}
+.team-image-5 {
+    background-image: url(../images/trainer5.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 18px;
+}
+.team-image-6 {
+    background-image: url(../images/trainer6.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 18px;
+}
+
+
+/* footer styles related ............................. */
+footer {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+footer div {
+    margin-bottom: 10px;
+}
+
+.footer-details {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 30px 0px;
+}
+
+.footer-details p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer-sec {  
+    align-items: center;
+    gap: 250px;
+}
+
+.footer-title {
+    color: red;
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.footer-content {
+    max-width: 40%;
+}
+
+.footer-navbar {
+    max-width: 50%;
+    gap: 150px;
+}
+
+.footer-navbar nav {
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+
+.footer-navbar nav h3 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.footer-navbar nav li {
+    list-style: none;
+    text-align: left;
+    font-size: 1.4rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 10px;
+}
+
+
+
+
+
 /* Media queries related............................. */
 
 @media screen and (max-width: 576px) {
@@ -361,7 +492,9 @@ form input {
     .nav-item,
     .habit-item,
     .second-sec,
-    .calculator-details {
+    .calculator-details,
+    .footer-sec,
+    .footer-navbar {
         flex-direction: column;
         align-items: start;
     }
@@ -408,5 +541,14 @@ form input {
 
     .calculator-content {
         text-align: left;
+    }
+
+    .team-section {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .footer-sec,
+    .footer-navbar {
+        gap: 0px;
     }
 }
