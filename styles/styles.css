@@ -228,6 +228,128 @@ main section {
 }
 
 
+/* Training and exercise related styles................. */
+/* .row-1 {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.row-2 {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr 1fr;
+}
+
+.training-image-1 {
+    background-image: url(../images/exercise1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+.training-image-2 {
+    background-image: url(../images/exercise2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+.training-image-3 {
+    background-image: url(../images/exercise3.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+.training-image-4 {
+    background-image: url(../images/exercise4.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+.training-image-5 {
+    background-image: url(../images/exercise5.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+.training-image-6 {
+    background-image: url(../images/exercise6.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+} */
+
+
+/*calculator related styles ......................... */
+
+
+.calculator-content {
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.calculator-section {
+    width: 100%;
+    margin-top: 80px;
+    background-color: rgb(34, 34, 34);
+    border-radius: 20px;
+    padding: 20px 0px;
+}
+
+.calculator-details {
+    max-width: 95%;
+    max-height: 95%;
+    justify-content: space-between;
+    margin: 20px auto;
+}
+
+.calculator-chart {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.chart-title,
+.chart-value {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 15px 20px;
+}
+
+.chart-title {
+    font-weight: 500;
+}
+
+.chart-value {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.875rem;
+}
+
+/* Calculator form related styles............... */
+.bmi-form {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.bmi-form h2 {
+    margin: 0px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-rows: 1fr 1fr 2fr; */
+    gap: 12px;
+}
+
+form input {
+    padding: 12px 20px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: rgba(255, 255, 255, 0.6);
+}
 
 
 /* Media queries related............................. */
@@ -238,7 +360,8 @@ main section {
     .navbar,
     .nav-item,
     .habit-item,
-    .second-sec {
+    .second-sec,
+    .calculator-details {
         flex-direction: column;
         align-items: start;
     }
@@ -276,5 +399,14 @@ main section {
     .second-sec {
         gap: 10px;
         padding: auto 20px;
+    }
+
+    .calculator-details {
+        /* padding: 5px; */
+        gap: 20px;
+    }
+
+    .calculator-content {
+        text-align: left;
     }
 }
