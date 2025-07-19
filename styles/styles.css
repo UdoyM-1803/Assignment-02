@@ -350,6 +350,9 @@ form input {
     color: rgba(255, 255, 255, 0.6);
 }
 
+#activity-factor {
+    grid-column: span 2;
+}
 
 
 /* Fifth section related style..................... */
